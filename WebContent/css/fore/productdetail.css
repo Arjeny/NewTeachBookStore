@@ -1,0 +1,144 @@
+body{
+	font-size: 12px;
+	font-family: arial;
+}
+div.bluecolor{
+			color: #2AABD2 !important;
+		}
+div.imgAndInfo{
+	margin: 40px 20px;	
+}
+div.imgInImgAndInfo{
+	width: 425px;
+	float: left;
+}
+img.bigImg{
+	width: 400px;
+	height: 400px;
+	padding: 20px;
+	border: solid 1px #F2F2F2;
+}
+div.infoInImgAndInfo{
+	padding: 0px 20px;
+	overflow: hidden;
+}
+div.titleOfProduct{
+	font-size: 16px;
+	color: black;
+	font-weight: bold;
+	margin: 0px 10px;
+}
+div.subTitleOfProduct{
+	margin: 0px 10px;
+	color: #DD2727;
+}
+div.juhuasuan{
+	background-color: #2DA77A;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+	margin-top: 10px;
+}
+div.juhuasuan span.juhuasuan{
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 黑体;
+}
+div.juhuasuan span.time{
+	color: #FFC057;
+	font-weight: bold;
+}
+div.productPriceDiv{
+	background-image: url(http://how2j.cn/tmall/img/site/priceBackground.png);
+	height: 102px;
+	padding: 10px;
+	color: #666666;
+}
+div.shoppingCoupon img.coupon{
+	height: 16px;
+}
+div.productPriceDiv div.originalPriceDiv{
+	margin-top: 5px;
+}
+div.productPriceDiv div.presentPriceDiv{
+	margin-top: 5px;
+}
+div.originalPriceDiv span.originalPriceDesc{
+	color: #999999;
+	display: inline-block;
+	width: 68px;
+}
+div.originalPriceDiv span.originalPrice{
+	text-decoration: line-through;
+}
+div.presentPriceDiv span.presentPriceDesc{
+	color: #999999;
+	display: inline-block;
+	width: 68px;
+	position: relative;
+	top: -10px;
+}
+div.presentPriceDiv span.presentPriceIcon{
+	color: #2AABD2;
+	font-size: 16px;
+	font-weight: bold;
+}
+div.presentPriceDiv span.presentPrice{
+	color: #2AABD2;
+	font-size: 30px;
+	font-weight: bold;
+}
+div.saleVolumeAndCommentDiv{
+	margin-top: 20px;
+	border-top: dashed 1px #C9C9C9;
+	border-bottom: dashed 1px #C9C9C9;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	color: #999999;
+}
+div.productNum{
+	margin-top: 20px;
+}
+div.saleVolumeAndCommentDiv span.saleVolume, div.saleVolumeAndCommentDiv span.comment{
+	display: inline-block;
+	width: 35%;
+}
+span.saleVolume{
+	border-right: dashed 1px #E5DFDA;
+}
+div.saleVolumeAndCommentDiv span.numberOfSale, div.saleVolumeAndCommentDiv span.numOfComment{
+	font-weight: bold;
+	color: bulecolor;
+}
+div.productNum{
+	color: #999999;
+}
+div.productNum input.productNumSetting{
+	width: 35px;
+	height: 32px;
+}
+div.productNum span.updown{
+	border: solid 1px #999999;
+	display: block;
+	padding-top: 4px;
+	width: 20px;
+	height: 14px;
+	text-align: center;
+}
+div.productNum span.blank{
+	height: 4px;
+	display: block;
+}
+span.updown img{
+	display: inline-block;
+	vertical-align: top;
+}
+div.servicePromision{
+	color: #999999;
+	margin-top: 20px;
+}
+div.buyDiv{
+	margin-top: 20px;
+	text-align: center;
+}

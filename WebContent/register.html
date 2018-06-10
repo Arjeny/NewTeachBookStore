@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="js/jquery/2.0.0/jquery.min.js"></script>
+		<link href="css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+		<script src="js/bootstrap/3.3.6/bootstrap.min.js"></script>
+		<title>注册账户</title>
+	</head>
+	<style type="text/css">
+		div.father{
+			position: relative;
+			width: 400px;
+			margin: 100px auto;
+		}
+	</style>
+	
+	<script type="text/javascript">
+		function confirmPassword () {
+			var password = document.getElementById("password").value;
+			var confirmPwd = document.getElementById("confirm_pwd").value;
+			return password == confirmPwd;
+		}
+		
+		$(function () {
+			$("#confirm_pwd").keyup(function(){
+				if(confirmPassword()){
+					document.getElementById("errMessage").innerHTML="<font color='green'>两次密码一致</font>";
+					document.getElementById("submit").disabled = false;
+				}else{
+					document.getElementById("errMessage").innerHTML="<font color='red'>请确保两次密码一致</font>";
+					document.getElementById("submit").disabled = true;
+				}
+			});
+		});
+	</script>
+	
+	<body>
+		<div class="father">
+			<form action="RegisterServlet" method="post" class="form-horizontal" role="form">
+				<div class="form-group">
+    				<label for="username" class="col-md-3 control-label">姓名</label>
+    				<div class="col-md-7">
+      					<input type="text" class="form-control" name="username" placeholder="请输入用户名">
+    				</div>
+  				</div>
+				<div class="form-group">
+				    <label for="password" class="col-md-3 control-label">密码</label>
+				    <div class="col-md-7">
+				      <input type="password" class="form-control" id="password" name="password" placeholder="请输入密码">
+				    </div>
+				</div>
+				<div class="form-group">
+				    <label for="confirm_pwd" class="col-md-3 control-label">确认密码</label>
+				    <div class="col-md-7">
+				      <input type="password" class="form-control" id="confirm_pwd" name="confirm_pwd" placeholder="请确认密码">
+				      <span id="errMessage"></span>
+				    </div>
+				</div>
+				<div class="form-group">
+				    <label for="email" class="col-md-3 control-label">邮箱</label>
+				    <div class="col-md-7">
+				      <input type="text" class="form-control" name="email" placeholder="请输入邮箱">
+				    </div>
+				</div>
+				<div class="form-group">
+				    <div class="col-md-offset-4 col-md-8">
+				      <button type="submit" id="submit" class="btn btn-default">确认注册</button>
+				    </div>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
